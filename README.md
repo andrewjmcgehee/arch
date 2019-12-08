@@ -53,4 +53,13 @@ Must install `xorg-server xorg-xinit i3-gaps i3status` and put `exec i3` in `~/.
 Must export the environment variable `LC_COLLATE="C"`
 
 ### Natural Scrolling
-
+Added this to `/etc/X11/xorg.conf.d/30-touchpad.conf`
+```
+Section "InputClass"
+	Identifier "SynPS/2 Synaptics TouchPad"
+	Driver "libinput"
+	Option "Tapping" "on"
+	Option "ClickMethod" "clickfinger"
+	Option "NaturalScrolling" "true"
+EndSection
+```
