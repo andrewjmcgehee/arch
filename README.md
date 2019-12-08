@@ -49,7 +49,7 @@ Simple enough.
 ### i3
 Must install `xorg-server xorg-xinit i3-gaps i3status` and put `exec i3` in `~/.xinitrc`
 
-### Show dot file first in `ls`
+### Show dot files first in `ls`
 Must export the environment variable `LC_COLLATE="C"`
 
 ### Natural Scrolling
