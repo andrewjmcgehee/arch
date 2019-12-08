@@ -38,7 +38,7 @@ Simple enough.
 13. Set locale by uncommenting appropriate lines in `/etc/locale.gen` and running `locale-gen`.
 14. Create locale config with `echo "LANG=<language_code> >> /etc/locale.conf`.
 15. Add hostname for networking in `/etc/hostname`.
-16. Add appropriate entries to `/etc/hosts`
+16. Add appropriate entries to `/etc/hosts`.
 17. Create root password with `passwd`.
 18. Install grub with `pacman -S grub` and `grub-install --target=i386-pc /dev/sdX`.
 19. Configure grub with `grub-mkconfig -o /boot/grub/grub.cfg`.
