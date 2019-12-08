@@ -52,7 +52,7 @@ Must install `xorg-server xorg-xinit i3-gaps i3status` and put `exec i3` in `~/.
 ### Show dot files first in `ls`
 Must export the environment variable `LC_COLLATE="C"`
 
-### Natural Scrolling
+### Natural Scrolling & Tapping on Trackpad
 Added this to `/etc/X11/xorg.conf.d/30-touchpad.conf`
 ```
 Section "InputClass"
