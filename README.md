@@ -43,3 +43,6 @@ Simple enough.
 18. Install grub with `pacman -S grub` and `grub-install --target=i386-pc /dev/sdX`.
 19. Configure grub with `grub-mkconfig -o /boot/grub/grub.cfg`.
 20. Unmount and reboot with `umount -R /mnt` and `reboot`.
+
+## Natural Scrolling
+
