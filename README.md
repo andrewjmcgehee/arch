@@ -44,5 +44,10 @@ Simple enough.
 19. Configure grub with `grub-mkconfig -o /boot/grub/grub.cfg`.
 20. Unmount and reboot with `umount -R /mnt` and `reboot`.
 
-## Natural Scrolling
+## Configuration
+
+### i3
+Must install `xorg-server xorg-xinit i3-gaps i3status` and put `exec i3` in `~/.xinitrc`
+
+### Natural Scrolling
 
