@@ -1,6 +1,6 @@
 # Arch Linux
 
-This repo exists for me to document things I learn while messing around with Arch Linux. It's mainly a resource for myself. It will also probably contain my dot-files and config files once I get my Arch installation setup the way I like it.
+This repo exists for me to document things I learn while messing around with Arch Linux. It's mainly a resource for myself. It will also probably contain my dot-files and config files once I get my Arch installation setup the way I like it. I should give credit to @LukeSmithXYZ as the inspiration to use arch mainly came from him, and a lot of the packages I use are also taken from his LARBS setup.
 
 ## Machine
 | Parameter | Value |
