@@ -48,7 +48,7 @@ Simple enough.
 ## Configuration
 
 ### Tiling Window Manager - bspwm
-Install `xorg-server xorg-xinit bspwm sxhkd` and put `exec bspwm` in `~/.xinitrc`. The packages with `xorg` manage the X graphical server, and `sxhkd` allows you to set keyboard shutcuts for bspwm. 
+Install `xorg-server xorg-xinit bspwm sxhkd` and put `exec bspwm` in `~/.xinitrc`. The `xorg` packages manage the X graphical server, and `sxhkd` allows you to set keyboard shutcuts for bspwm. 
 
 ### Show Dot-files First in `ls`
 Export the environment variable `LC_COLLATE=C`
