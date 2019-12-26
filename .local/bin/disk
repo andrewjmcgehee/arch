@@ -1,0 +1,2 @@
+#!/usr/bin/env sh
+pgrep -x dunst >/dev/null && notify-send "Disk" "$(df -h --output=target,used,size)"

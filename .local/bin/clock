@@ -1,0 +1,5 @@
+#!/usr/bin/env sh
+case $1 in
+  "1") pgrep -x dunst >/dev/null && notify-send "Calendar" "$(cal --color=always | sed "s/..7m/<b><span color=\"red\">/;s/..27m/<\/span><\/b>/")" && notify-send "Schedule" "$(calcurse -D ~/.config/calcurse -d3)" ;;
+  "3") $TERMINAL -e calcurse ;;
+esac

@@ -1,0 +1,64 @@
+!! SCROLLING
+URxvt.jumpScroll:             true
+URxvt.mouseWheelScrollPage:   false
+URxvt.scrollBar:              false
+URxvt.scrollTtyKeypress:      true
+URxvt.scrollTtyOutput:        false
+
+!! COLORS / FONTS / UI
+URxvt.background:             [92]#1a1a1a
+URxvt.foreground:             #ebdbb2
+! Black
+URxvt.color0:                 #222222
+! Dark Red
+URxvt.color1:                 #cc241d
+! Dark Green
+URxvt.color2:                 #98971a
+! Dark Yellow
+URxvt.color3:                 #d79921
+! Dark Blue
+URxvt.color4:                 #458588
+! Dark Purple
+URxvt.color5:                 #b16286
+! Dark Cyan
+URxvt.color6:                 #689d6a
+! Dark Grey
+URxvt.color7:                 #a89984
+! Light Grey
+URxvt.color8:                 #928374
+! Light Red
+URxvt.color9:                 #fb4934
+! Light Green
+URxvt.color10:                #b8bb26
+! Light Yellow
+URxvt.color11:                #fabd2f
+! Light Blue
+URxvt.color12:                #83a598
+! Light Purple
+URxvt.color13:                #d3869b
+! Light Cyan
+URxvt.color14:                #8ec07c
+! White
+URxvt.color15:                #ebdbb2
+URxvt.depth:                  32
+URxvt.font:                   xft:Inconsolata:size=12
+
+!! BEHAVIOR
+! URxvt.saveLines:              number [default 1000]
+URxvt.buffered:               true
+URxvt.pointerBlank:           true
+URxvt.visualBell:             false
+
+!! PERL EXTENSIONS
+URxvt.perl-ext-common:        resize-font
+
+!! USER KEYBINDINGS
+! URxvt.modifier:               modifier
+URxvt.keysym.M-0:             resize-font:reset
+URxvt.keysym.M-equal:         resize-font:bigger                  
+URxvt.keysym.M-minus:         resize-font:smaller
+URxvt.resize-font.step:       1
+
+!! ISO SHIT
+URxvt.iso14755:               false
+URxvt.iso14755_52:            false
