@@ -1,6 +1,6 @@
 # Arch Linux
 
-This repo exists for me to document things I learn while messing around with Arch Linux. It's mainly a resource for myself. It will also probably contain my dot-files and config files once I get my Arch installation setup the way I like it. I should give credit to @LukeSmithXYZ as the inspiration to use arch mainly came from him, and a lot of the packages I use are also taken from his LARBS setup.
+This repo exists for me to document things I learn while messing around with Arch Linux. It's mainly a resource for myself. It also contains my dot-files and config files. I should give credit to @LukeSmithXYZ as the inspiration to use Arch mainly came from him, and a lot of the packages and settings I use are also modified from his LARBS setup.
 
 ## Machine
 | Parameter | Value |
@@ -31,8 +31,8 @@ Simple enough.
     * Mount boot with `mount /dev/sdX1 /mnt/boot`
     * Make home dir with `mkdir /mnt/home`
     * Mount home with `mount /dev/sdX4 /mnt/home`
-9. (Optional) Organize mirrors by locale closest to you in `/etc/pacman.d/mirrorlist`. 
-10. Select packages you wish to install and install base packages with `pacstrap /mnt base linux linux-firmware ...`. Here I also install `neovim base-devel man-pages man-db texinfo networkmanager network-manager-applet` to have a text editor, manual pages, and a network manager after install. 
+9. (Optional) Organize mirrors by locale closest to you in `/etc/pacman.d/mirrorlist`.
+10. Select packages you wish to install and install base packages with `pacstrap /mnt base linux linux-firmware ...`. Here I also install `neovim base-devel man-pages man-db texinfo networkmanager network-manager-applet` to have a text editor, manual pages, and a network manager after install.
 11. Create FS Tab with `genfstab -U /mnt >> /mnt/etc/fstab`.
 12. Chroot into system with `arch-chroot /mnt`.
 13. Set time zone info with `ln -s /usr/share/zoneinfo/<region>/<city> /etc/localtime` and `hwclock --systohc`.
@@ -48,7 +48,7 @@ Simple enough.
 ## Configuration
 
 ### Tiling Window Manager - bspwm
-Install `xorg-server xorg-xinit bspwm sxhkd` and put `exec bspwm` in `~/.xinitrc`. The `xorg` packages manage the X graphical server, and `sxhkd` allows you to set keyboard shutcuts for bspwm. 
+Install `xorg-server xorg-xinit bspwm sxhkd` and put `exec bspwm` in `~/.xinitrc`. The `xorg` packages manage the X graphical server, and `sxhkd` allows you to set keyboard shutcuts for bspwm.
 
 ### Show Dot-files First in `ls`
 Export the environment variable `LC_COLLATE=C`
