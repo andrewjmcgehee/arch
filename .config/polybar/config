@@ -36,7 +36,7 @@ padding-left = 0
 padding-right = 1
 module-margin-left = 1
 module-margin-right = 1
- 
+;
 ; Fonts
 font-0 = "Inconsolata:size=9;1"
 font-1 = "Noto Color Emoji:scale=10:style=Regular;2"

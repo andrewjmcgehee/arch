@@ -19,7 +19,7 @@ alias \
 
 # Shortcuts
 alias \
-  D="cd ~/Downloads" \
+  D="cd ~/Documents" \
   cf="cd ~/.config" \
   cfa="$EDITOR ~/.config/aliasrc" \
   cfb="$EDITOR ~/.config/bspwm/bspwmrc" \
@@ -28,7 +28,7 @@ alias \
   cfn="$EDITOR ~/.config/nvim" \
   cfz="$EDITOR $ZDOTDIR/.zshrc" \
   cls="clear" \
-  d="cd ~/Documents" \
+  d="cd ~/Downloads" \
   g="git" \
   h="head" \
   ka="killall" \
