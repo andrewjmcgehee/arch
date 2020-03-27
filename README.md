@@ -5,11 +5,9 @@ This repo exists for me to document things I learn while messing around with Arc
 ## Machine
 | Parameter | Value |
 | :---      | :---  |
-| Make | Lenovo |
-| Model | ThinkPad x220 |
-| CPU | Intel i5 2520M 2.50 Ghz (Dual Core)|
-| RAM | 8GB |
-| Graphics | Intel 2nd Generation Core Processor Family Integrated Graphics (rev 09) |
+| CPU | Intel i7 6700k |
+| GPU | Nvidia GeForce GTX 980ti |
+| RAM | 32GB |
 
 ## Installation
 Simple enough.
