@@ -1,0 +1,2 @@
+#!/bin/env sh
+dunstify "Battery" "$(python3 $HOME/.local/bin/battery.py)"

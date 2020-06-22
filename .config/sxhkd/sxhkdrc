@@ -1,0 +1,94 @@
+# The Simple X Hotkey Daemon is the program used by LARBS to map most of the
+# dwm-independent commands.  This file is pretty readable, so I'll let you read
+# it.
+
+# The keys NOT bound here by sxhkd, but by dwm or i3 are:
+# The t thru p keys on the top row
+# The f thru ; keys on the home row
+# The b key on the bottom row (hides the bar in either case)
+
+# Terminal 
+alt + Return
+  $TERMINAL
+
+# Closing Windows
+alt + {_, shift +}q
+	bspc node -{c,k}
+
+# D Menu
+alt + d
+  dmenu_run -nb '#000000' -fn 'Roboto-9'
+
+# Google Messages
+alt + m
+  firefox --new-window https://messages.google.com
+
+# Reload polybar
+alt + shift + r
+	polybar-msg cmd restart
+
+# Ranger, Audio, Browser
+alt + r
+  $TERMINAL -e $FILE
+alt + a
+  $TERMINAL -e alsamixer;
+alt + w
+  $BROWSER
+
+# Directional Manip
+alt + {h,j,k,l}
+	bspc node -s {west,south,north,east}
+
+# Fullscreen
+alt + f
+	bspc node -t "~fullscreen"
+
+# Floating Manip
+alt + space 
+	bspc node -t "~floating"
+alt + shift + {h,j,k,l}
+	bspc node -v {-20 0,0 20,0 -20,20 0} 
+alt + {y,u,i,o}
+	bspc node -z {left -5 0,bottom 0 5,top 0 -5,right 5 0}
+alt + shift + {y,u,i,o}
+	bspc node -z {left 5 0,bottom 0 -5,top 0 5,right -5 0}
+
+# Desktops
+alt + {1-9}
+	bspc desktop -f {1-9}
+alt + shift + {1-9}
+	id=$(bspc query -N -n); bspc node -d ^{1-9}; bspc node -f $id
+
+# Misc.
+alt + Insert
+  showclip
+XF86MonBrightnessDown
+  xbacklight -dec 10
+XF86MonBrightnessUp
+  xbacklight -inc 10
+shift + XF86MonBrightnessDown
+  xbacklight -dec 3
+shift + XF86MonBrightnessUp
+  xbacklight -inc 3
+
+# Recording
+
+# Take screenshot
+Print
+  maim screenshot-$(date '+%y%m%d-%H%M-%S').png
+# Pick screenshot type
+shift + Print
+  maimpick
+
+# Audio keys
+XF86AudioMute
+  amixer sset Master toggle; 
+XF86Audio{Raise,Lower}Volume
+  amixer sset Master 5%{+,-};
+
+# Function keys
+
+# Show readme
+# Mount a USB drive or Android device
+alt + {F9,F10}
+  {dmenumount,dmenuumount}

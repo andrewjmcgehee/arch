@@ -1,0 +1,2 @@
+#!/usr/bin/env sh
+curl "https://raw.githubusercontent.com/andrewjmcgehee/arch/test/emojitest.txt"

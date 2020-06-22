@@ -1,0 +1,12 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhistcnt =0
+let g:netrw_dirhist_0='/home/amcg/.local/share'
+let g:netrw_dirhist_9='/home/amcg/Code/Website/css'
+let g:netrw_dirhist_8='/home/amcg/Code/Website'
+let g:netrw_dirhist_7='/home/amcg/Code/Website/vendor/simple-line-icons/css'
+let g:netrw_dirhist_6='/home/amcg/Code/Website/vendor/simple-line-icons'
+let g:netrw_dirhist_5='/home/amcg/Code/Website/vendor'
+let g:netrw_dirhist_4='/home/amcg/Code/Website'
+let g:netrw_dirhist_3='/home/amcg/Code/Website/vendor/devicons/css'
+let g:netrw_dirhist_2='/home/amcg/Code/Website/vendor/devicons'
+let g:netrw_dirhist_1='/home/amcg/Code/Website/vendor'

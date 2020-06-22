@@ -1,0 +1,3 @@
+#!/bin/env sh
+report="$(cat $HOME/.local/share/weatherreport)"
+dunstify "Weather" "$report"

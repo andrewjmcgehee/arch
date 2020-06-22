@@ -1,0 +1,10 @@
+#!/usr/bin/env sh
+
+[ ! -z "$1" ] && cp "$1" ~/.config/wallpaper && notify-send -i "$HOME/.config/wallpaper" "Wallpaper changed."
+if [[ "$2" == "center" ]]; then
+  xwallpaper --center ~/.config/wallpaper
+elif [[ "$2" == "zoom" ]]; then
+  xwallpaper --zoom ~/.config/wallpaper
+elif [[ "$2" == "focus" ]]; then
+  xwallpaper --focus ~/.config/wallpaper
+fi

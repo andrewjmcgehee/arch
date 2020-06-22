@@ -1,0 +1,11 @@
+#!/usr/bin/python
+# EASY-INSTALL-ENTRY-SCRIPT: 'ueberzug==18.1.5','console_scripts','ueberzug'
+import re
+import sys
+from importlib.metadata import distribution
+
+if __name__ == '__main__':
+    sys.argv[0] = re.sub(r'(-script\.pyw?|\.exe)?$', '', sys.argv[0])
+    for entry_point in distribution('ueberzug').entry_points:
+        if entry_point.group == 'console_scripts' and entry_point.name == 'ueberzug':
+            sys.exit(entry_point.load()())
