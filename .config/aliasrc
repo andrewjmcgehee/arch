@@ -34,6 +34,7 @@ alias \
   h="head" \
   ka="killall" \
   l="ls --group-directories-first" \
+  ll="ls -lah --group-directories-first" \
   orph="sudo pacman -Rns $(pacman -Qtdq)" \
   p="sudo pacman" \
   p3="python3" \

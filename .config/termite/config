@@ -1,16 +1,19 @@
+# vim: ft=dosini cms=#%s
 [options]
 allow_bold = true
 audible_bell = false
 clickable_url = true
 font = JetBrainsMono Nerd Font Mono 13
+scroll_on_keystroke = true
 scrollback_lines = 10000
+cursor_blink = off
 
 [colors]
 foreground          = #abb2bf
 foreground_bold     = #b6bdca
 cursor              = #b6bdca
 cursor_foreground   = #282c34
-background          = rgba(28, 32, 38, 0.93)
+background          = rgba(28, 32, 38, 0.94)
 
 # 16 color space
 
@@ -60,5 +63,3 @@ color233 = #111317
 color234 = #171a1d
 
 [hints]
-
-# vim: ft=dosini cms=#%s
